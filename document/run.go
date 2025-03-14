@@ -107,6 +107,21 @@ func (r Run) AddText(s string) {
 	ic.T.Content = s
 }
 
+func AddIndentedMultilineText(doc *Document, text string, size int) {
+	lines := strings.Split(text, "\n")
+	for _, line := range lines {
+		if line != "" {
+			_para := doc.AddParagraph()
+			// 设置每个新段落的左缩进
+			indent := measurement.Distance(size) * measurement.Point * 2
+			_para.Properties().SetFirstLineIndent(indent)
+			run := _para.AddRun()
+			run.Properties().SetSize(measurement.Distance(size) * measurement.Point)
+			run.AddText(line)
+		}
+	}
+}
+
 // AddMultiLineText adds multi line text to a run.
 func (r Run) AddMultiLineText(s string) {
 	lines := strings.Split(s, "\n")
