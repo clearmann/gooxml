@@ -107,7 +107,7 @@ func (r Run) AddText(s string) {
 	ic.T.Content = s
 }
 
-func AddIndentedMultilineText(doc *Document, text string, size int) {
+func AddIndentedMultilineText(doc *Document, font string, text string, size int) {
 	lines := strings.Split(text, "\n")
 	for _, line := range lines {
 		if line != "" {
@@ -117,6 +117,7 @@ func AddIndentedMultilineText(doc *Document, text string, size int) {
 			_para.Properties().SetFirstLineIndent(indent)
 			run := _para.AddRun()
 			run.Properties().SetSize(measurement.Distance(size) * measurement.Point)
+			run.Properties().SetFontFamily(font)
 			run.AddText(line)
 		}
 	}
