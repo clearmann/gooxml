@@ -69,7 +69,7 @@ DOCX/XLSX/PPTX.
 - [自动生成目录](https://github.com/clearmann/gooxml/tree/master/_examples/document/toc) 创建文档标题，并基于标题自动生成目录
 - [图像处理](https://github.com/clearmann/gooxml/tree/master/_examples/document/image) 在页面上绝对定位图像，支持不同文字环绕方式
 - [页眉页脚](https://github.com/clearmann/gooxml/tree/master/_examples/document/header-footer) 创建包含页码的页眉和页脚
-- [多重页眉页脚](https://github.com/clearmann/gooxml/tree/master/_examples/document/header-footer-multiple) 根据文档章节使用不同的页眉页脚
+- [多重页眉+页脚+分割线+页面设置为A4+图片等比例处理](https://github.com/clearmann/gooxml/tree/master/_examples/document/header-footer-multiple) 根据文档章节使用不同的页眉页脚和黑色分割线以及页面大小设置
 - [内联表格](https://github.com/clearmann/gooxml/tree/master/_examples/document/tables) 添加带边框和不带边框的表格
 - [使用现有Word文档作为模板](https://github.com/clearmann/gooxml/tree/master/_examples/document/use-template) 打开文档作为模板以复用其中的样式
 - [填写表单字段](https://github.com/clearmann/gooxml/tree/master/_examples/document/fill-out-form) 打开包含嵌入式表单字段的文档，填写字段并将结果另存为已填写的新表单
