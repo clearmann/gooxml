@@ -107,6 +107,7 @@ func (r Run) AddText(s string) {
 	ic.T.Content = s
 }
 
+// 自带缩进, 遇到\n自动换行,设置字体(样式大小)
 func AddIndentedMultilineText(doc *Document, font string, text string, size int) {
 	lines := strings.Split(text, "\n")
 	for _, line := range lines {

@@ -80,6 +80,7 @@ func (s Section) SetPageMargins(top, right, bottom, left, header, footer, gutter
 	s.x.PgMar = margins
 }
 
+// 设置页面为A4纸张大小,如果出现分节问题,需要在每个分节中都调用
 func (section Section) SetLandscapeA4PageSize() {
 	sectPr := section.X()
 	sectPr.PgSz = wml.NewCT_PageSz()
